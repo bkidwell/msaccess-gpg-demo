@@ -1,6 +1,6 @@
 ﻿Copyright © 2003 Brendan Kidwell
 
-Use of msaccess-vcs-integration and documentation are subject to the following
+Use of msaccess-gpg-demo and documentation are subject to the following
 BSD-style license:
 
 Permission to use, copy, modify, and/or distribute this software for any purpose
