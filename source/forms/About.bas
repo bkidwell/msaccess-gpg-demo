@@ -1,5 +1,6 @@
 Version =19
 VersionRequired =19
+Begin Form
     PopUp = NotDefault
     Modal = NotDefault
     RecordSelectors = NotDefault
@@ -24,30 +25,39 @@ VersionRequired =19
     Right =13140
     Bottom =5955
     DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
         0xcc680cc2fa67e240
     End
     Caption ="About"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
         0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
         0x010000006801000000000000a10700000100000001000000
     End
+    Begin
+        Begin Label
             BackStyle =0
             FontName ="Tahoma"
         End
+        Begin CommandButton
             FontSize =8
             FontWeight =400
             ForeColor =-2147483630
             FontName ="Tahoma"
         End
+        Begin TextBox
             FELineBreak = NotDefault
             SpecialEffect =2
             OldBorderStyle =0
             BorderLineStyle =0
             FontName ="Tahoma"
         End
+        Begin Section
             Height =4140
             BackColor =-2147483633
             Name ="Detail"
+            Begin
+                Begin Label
                     OverlapFlags =85
                     Left =120
                     Top =120
@@ -64,6 +74,7 @@ VersionRequired =19
                         "his application however you wish, but be sure to read and respect any license in"
                         "formation you may find at the top of each module."
                 End
+                Begin CommandButton
                     Default = NotDefault
                     Cancel = NotDefault
                     OverlapFlags =85
@@ -75,6 +86,7 @@ VersionRequired =19
                     Caption ="OK"
                     OnClick ="[Event Procedure]"
                 End
+                Begin Label
                     FontUnderline = NotDefault
                     OverlapFlags =85
                     Left =120

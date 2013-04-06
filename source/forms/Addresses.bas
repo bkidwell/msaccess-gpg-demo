@@ -1,5 +1,6 @@
 Version =19
 VersionRequired =19
+Begin Form
     AutoCenter = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
@@ -16,71 +17,92 @@ VersionRequired =19
     Right =9660
     Bottom =5880
     DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
         0x5f6d5044fb67e240
     End
     RecordSource ="addresses"
     Caption ="Addresses"
     DatasheetFontName ="Arial"
+    Begin
+        Begin Label
             BackStyle =0
             BackColor =-2147483633
             ForeColor =-2147483630
         End
+        Begin Rectangle
             SpecialEffect =3
             BackStyle =0
         End
+        Begin Image
             BackStyle =0
             OldBorderStyle =0
             PictureAlignment =2
         End
+        Begin CommandButton
             FontSize =8
             FontWeight =400
             FontName ="MS Sans Serif"
         End
+        Begin OptionButton
             SpecialEffect =2
             LabelX =230
             LabelY =-30
         End
+        Begin CheckBox
             SpecialEffect =2
             LabelX =230
             LabelY =-30
         End
+        Begin OptionGroup
             SpecialEffect =3
         End
+        Begin BoundObjectFrame
             SpecialEffect =2
             OldBorderStyle =0
             BackStyle =0
         End
+        Begin TextBox
             FELineBreak = NotDefault
             SpecialEffect =2
             BackColor =-2147483643
             ForeColor =-2147483640
         End
+        Begin ListBox
             SpecialEffect =2
             BackColor =-2147483643
             ForeColor =-2147483640
         End
+        Begin ComboBox
             SpecialEffect =2
             BackColor =-2147483643
             ForeColor =-2147483640
         End
+        Begin Subform
             SpecialEffect =2
         End
+        Begin UnboundObjectFrame
             SpecialEffect =2
             OldBorderStyle =1
         End
+        Begin ToggleButton
             FontSize =8
             FontWeight =400
             FontName ="MS Sans Serif"
         End
+        Begin Tab
             BackStyle =0
         End
+        Begin FormHeader
             Height =0
             BackColor =-2147483633
             Name ="FormHeader"
         End
+        Begin Section
             Height =4296
             BackColor =-2147483633
             Name ="Detail"
+            Begin
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -89,6 +111,8 @@ VersionRequired =19
                     ColumnWidth =2568
                     Name ="LastName"
                     ControlSource ="LastName"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =120
@@ -99,6 +123,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -108,6 +133,8 @@ VersionRequired =19
                     TabIndex =1
                     Name ="FirstName"
                     ControlSource ="FirstName"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =480
@@ -118,6 +145,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -127,6 +155,8 @@ VersionRequired =19
                     TabIndex =2
                     Name ="Street"
                     ControlSource ="Street"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =840
@@ -137,6 +167,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -146,6 +177,8 @@ VersionRequired =19
                     TabIndex =3
                     Name ="City"
                     ControlSource ="City"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =1200
@@ -156,6 +189,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -165,6 +199,8 @@ VersionRequired =19
                     TabIndex =4
                     Name ="State"
                     ControlSource ="State"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =1560
@@ -175,6 +211,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =3060
@@ -185,6 +222,8 @@ VersionRequired =19
                     Name ="Zip"
                     ControlSource ="Zip"
                     InputMask ="00000C####"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =2700
                             Top =1560
@@ -195,6 +234,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -204,6 +244,8 @@ VersionRequired =19
                     TabIndex =6
                     Name ="Email"
                     ControlSource ="Email"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =1920
@@ -214,6 +256,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -223,6 +266,8 @@ VersionRequired =19
                     TabIndex =7
                     Name ="Phone"
                     ControlSource ="Phone"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =2280
@@ -233,6 +278,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1500
@@ -243,6 +289,8 @@ VersionRequired =19
                     Name ="Birthday"
                     ControlSource ="Birthday"
                     Format ="Short Date"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =2640
@@ -253,6 +301,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin TextBox
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =85
@@ -265,6 +314,8 @@ VersionRequired =19
                     TabIndex =10
                     Name ="Comments"
                     ControlSource ="Comments"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =3000
@@ -275,6 +326,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2760
                     Top =2640
@@ -284,6 +336,7 @@ VersionRequired =19
                     Name ="cmdBirthdayCal"
                     OnClick ="[Event Procedure]"
                     OnEnter ="[Event Procedure]"
+                    PictureData = Begin
                         0x2800000010000000100000000100040000000000800000000000000000000000 ,
                         0x0000000000000000000000000000800000800000008080008000000080008000 ,
                         0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
@@ -301,11 +354,13 @@ VersionRequired =19
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000
                     End
+                    ObjectPalette = Begin
                         0x0003100000000000800000000080000080800000000080008000800000808000 ,
                         0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
                         0xffffff0000000000
                     End
                 End
+                Begin TextBox
                     Locked = NotDefault
                     SpecialEffect =3
                     OverlapFlags =85
@@ -318,6 +373,8 @@ VersionRequired =19
                     Name ="RecordCreated"
                     ControlSource ="RecordCreated"
                     Format ="General Date"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =60
                             Top =3960
@@ -330,6 +387,7 @@ VersionRequired =19
                 End
             End
         End
+        Begin FormFooter
             Height =0
             BackColor =-2147483633
             Name ="FormFooter"

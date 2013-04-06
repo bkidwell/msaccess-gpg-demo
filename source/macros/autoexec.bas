@@ -1,8 +1,12 @@
 Version =196611
 ColumnsShown =0
+Begin
 End
+Begin
 End
+Begin
 End
+Begin
     Action ="OpenForm"
     Comment ="show About"
     Argument ="About"
@@ -12,6 +16,7 @@ End
     Argument ="-1"
     Argument ="0"
 End
+Begin
     Action ="OpenForm"
     Comment ="show Switchboard"
     Argument ="Switchboard"

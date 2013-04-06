@@ -1,5 +1,6 @@
 Version =19
 VersionRequired =19
+Begin Form
     PopUp = NotDefault
     Modal = NotDefault
     RecordSelectors = NotDefault
@@ -24,25 +25,33 @@ VersionRequired =19
     Right =9660
     Bottom =4095
     DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
         0xbe7bd062f767e240
     End
     Caption ="Upload Data to FTP Server"
     DatasheetFontName ="Arial"
+    Begin
+        Begin Label
             BackStyle =0
             FontName ="Tahoma"
         End
+        Begin CommandButton
             FontSize =8
             FontWeight =400
             ForeColor =-2147483630
             FontName ="Tahoma"
         End
+        Begin TextBox
             FELineBreak = NotDefault
             SpecialEffect =2
             OldBorderStyle =0
             FontName ="Tahoma"
         End
+        Begin Section
             BackColor =-2147483633
             Name ="Detail"
+            Begin
+                Begin Label
                     OverlapFlags =85
                     Left =120
                     Top =120
@@ -52,6 +61,7 @@ VersionRequired =19
                     Caption ="This function will upload the the data (contained in the file data.mdb) to the F"
                         "TP server. Please be sure you are connected to the Internet before you proceed."
                 End
+                Begin CommandButton
                     Default = NotDefault
                     OverlapFlags =85
                     AccessKey =71
@@ -63,6 +73,7 @@ VersionRequired =19
                     Caption ="&Go"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     Cancel = NotDefault
                     OverlapFlags =85
                     Left =3480

@@ -1,5 +1,6 @@
 Version =19
 VersionRequired =19
+Begin Form
     AllowFilters = NotDefault
     RecordSelectors = NotDefault
     ShortcutMenu = NotDefault
@@ -26,6 +27,7 @@ VersionRequired =19
     Bottom =5760
     DatasheetGridlinesColor =12632256
     Filter ="[ItemNumber] = 0 AND [Argument] = 'Default' "
+    RecSrcDt = Begin
         0xf9fea4ddd667e240
     End
     RecordSource ="Switchboard Items"
@@ -33,27 +35,36 @@ VersionRequired =19
     OnCurrent ="[Event Procedure]"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
         0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
         0x010000006801000000000000a10700000100000001000000
     End
+    Begin
+        Begin Label
             BackStyle =0
             FontName ="Tahoma"
         End
+        Begin Rectangle
             SpecialEffect =3
             BackStyle =0
         End
+        Begin Image
             BackStyle =0
             OldBorderStyle =0
             PictureAlignment =2
         End
+        Begin CommandButton
             FontSize =8
             FontWeight =400
             ForeColor =-2147483630
             FontName ="Tahoma"
         End
+        Begin Section
             Height =4770
             BackColor =-2147483633
             Name ="Detail"
+            Begin
+                Begin Rectangle
                     SpecialEffect =0
                     BackStyle =1
                     OldBorderStyle =0
@@ -64,6 +75,7 @@ VersionRequired =19
                     BackColor =8421504
                     Name ="VerticalShadowBox"
                 End
+                Begin Label
                     OverlapFlags =93
                     TextFontFamily =18
                     Left =2997
@@ -76,6 +88,7 @@ VersionRequired =19
                     Caption ="Address Book Database"
                     FontName ="Times New Roman"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =3030
                     Top =1305
@@ -86,6 +99,8 @@ VersionRequired =19
                     Name ="Option1"
                     OnClick ="=HandleButtonClick(1)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             OverlapFlags =85
                             Left =3390
                             Top =1305
@@ -98,6 +113,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     Visible = NotDefault
                     OverlapFlags =85
                     Left =3030
@@ -110,6 +126,8 @@ VersionRequired =19
                     Name ="Option2"
                     OnClick ="=HandleButtonClick(2)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             Visible = NotDefault
                             OverlapFlags =85
                             Left =3390
@@ -123,6 +141,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     Visible = NotDefault
                     OverlapFlags =85
                     Left =3030
@@ -135,6 +154,8 @@ VersionRequired =19
                     Name ="Option3"
                     OnClick ="=HandleButtonClick(3)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             Visible = NotDefault
                             OverlapFlags =85
                             Left =3390
@@ -148,6 +169,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     Visible = NotDefault
                     OverlapFlags =85
                     Left =3030
@@ -160,6 +182,8 @@ VersionRequired =19
                     Name ="Option4"
                     OnClick ="=HandleButtonClick(4)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             Visible = NotDefault
                             OverlapFlags =85
                             Left =3390
@@ -173,6 +197,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     Visible = NotDefault
                     OverlapFlags =85
                     Left =3030
@@ -185,6 +210,8 @@ VersionRequired =19
                     Name ="Option5"
                     OnClick ="=HandleButtonClick(5)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             Visible = NotDefault
                             OverlapFlags =85
                             Left =3390
@@ -198,6 +225,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     Visible = NotDefault
                     OverlapFlags =85
                     Left =3030
@@ -210,6 +238,8 @@ VersionRequired =19
                     Name ="Option6"
                     OnClick ="=HandleButtonClick(6)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             Visible = NotDefault
                             OverlapFlags =85
                             Left =3390
@@ -223,6 +253,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     Visible = NotDefault
                     OverlapFlags =85
                     Left =3030
@@ -235,6 +266,8 @@ VersionRequired =19
                     Name ="Option7"
                     OnClick ="=HandleButtonClick(7)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             Visible = NotDefault
                             OverlapFlags =85
                             Left =3390
@@ -248,6 +281,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin CommandButton
                     Visible = NotDefault
                     OverlapFlags =85
                     Left =3030
@@ -260,6 +294,8 @@ VersionRequired =19
                     Name ="Option8"
                     OnClick ="=HandleButtonClick(8)"
                     FontName ="System"
+                    Begin
+                        Begin Label
                             Visible = NotDefault
                             OverlapFlags =85
                             Left =3390
@@ -273,6 +309,7 @@ VersionRequired =19
                         End
                     End
                 End
+                Begin Rectangle
                     SpecialEffect =0
                     BackStyle =1
                     OverlapFlags =223
@@ -282,6 +319,7 @@ VersionRequired =19
                     BorderColor =8421376
                     Name ="HorizontalHeaderBox"
                 End
+                Begin Label
                     OverlapFlags =215
                     TextFontFamily =18
                     Left =2955
@@ -294,6 +332,7 @@ VersionRequired =19
                     Caption ="Address Book Database"
                     FontName ="Times New Roman"
                 End
+                Begin Line
                     OverlapFlags =95
                     SpecialEffect =1
                     Left =2685
@@ -301,6 +340,7 @@ VersionRequired =19
                     Width =4698
                     Name ="HorizontalDividingLine"
                 End
+                Begin Image
                     BackStyle =1
                     SizeMode =1
                     Width =2685

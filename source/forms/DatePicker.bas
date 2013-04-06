@@ -1,5 +1,6 @@
 Version =19
 VersionRequired =19
+Begin Form
     PopUp = NotDefault
     Modal = NotDefault
     RecordSelectors = NotDefault
@@ -24,36 +25,48 @@ VersionRequired =19
     Right =4128
     Bottom =5916
     DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
         0xf611209a7160e240
     End
     Caption ="Calendar"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
         0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
         0x010000006801000000000000a10700000100000001000000
     End
     OnActivate ="[Event Procedure]"
     OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
             BackStyle =0
         End
+        Begin Rectangle
             SpecialEffect =3
             BackStyle =0
         End
+        Begin CommandButton
             FontSize =8
             FontWeight =400
             ForeColor =-2147483630
             FontName ="MS Sans Serif"
         End
+        Begin TextBox
             SpecialEffect =2
             OldBorderStyle =0
         End
+        Begin ListBox
             SpecialEffect =2
         End
+        Begin ComboBox
             SpecialEffect =2
         End
+        Begin Section
             Height =4380
             BackColor =-2147483633
             Name ="Detail"
+            Begin
+                Begin ComboBox
                     LimitToList = NotDefault
                     RowSourceTypeInt =1
                     OverlapFlags =85
@@ -72,6 +85,7 @@ VersionRequired =19
                     AfterUpdate ="[Event Procedure]"
                     ControlTipText ="Month"
                 End
+                Begin CommandButton
                     AutoRepeat = NotDefault
                     OverlapFlags =85
                     Left =2520
@@ -84,6 +98,7 @@ VersionRequired =19
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Click or click and hold to go forward by month."
                 End
+                Begin CommandButton
                     AutoRepeat = NotDefault
                     OverlapFlags =85
                     Left =660
@@ -96,6 +111,7 @@ VersionRequired =19
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Click or click and hold to go back by month."
                 End
+                Begin CommandButton
                     AutoRepeat = NotDefault
                     OverlapFlags =85
                     Left =2520
@@ -108,6 +124,7 @@ VersionRequired =19
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Click or click and hold to go forward by year."
                 End
+                Begin CommandButton
                     AutoRepeat = NotDefault
                     OverlapFlags =85
                     Left =660
@@ -119,6 +136,7 @@ VersionRequired =19
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Click or click and hold to go back by year."
                 End
+                Begin TextBox
                     OverlapFlags =85
                     Left =1020
                     Top =120
@@ -129,6 +147,7 @@ VersionRequired =19
                     AfterUpdate ="[Event Procedure]"
                     ControlTipText ="Year"
                 End
+                Begin Label
                     OverlapFlags =93
                     TextAlign =2
                     Left =120
@@ -138,6 +157,7 @@ VersionRequired =19
                     Name ="Label19"
                     Caption ="Sun"
                 End
+                Begin Label
                     OverlapFlags =95
                     TextAlign =2
                     Left =600
@@ -147,6 +167,7 @@ VersionRequired =19
                     Name ="Label20"
                     Caption ="Mon"
                 End
+                Begin Label
                     OverlapFlags =95
                     TextAlign =2
                     Left =1080
@@ -156,6 +177,7 @@ VersionRequired =19
                     Name ="Label21"
                     Caption ="Tue"
                 End
+                Begin Label
                     OverlapFlags =95
                     TextAlign =2
                     Left =1560
@@ -165,6 +187,7 @@ VersionRequired =19
                     Name ="Label22"
                     Caption ="Wed"
                 End
+                Begin Label
                     OverlapFlags =95
                     TextAlign =2
                     Left =2040
@@ -174,6 +197,7 @@ VersionRequired =19
                     Name ="Label23"
                     Caption ="Thu"
                 End
+                Begin Label
                     OverlapFlags =95
                     TextAlign =2
                     Left =2520
@@ -183,6 +207,7 @@ VersionRequired =19
                     Name ="Label24"
                     Caption ="Fri"
                 End
+                Begin Label
                     OverlapFlags =87
                     TextAlign =2
                     Left =3000
@@ -192,6 +217,7 @@ VersionRequired =19
                     Name ="Label25"
                     Caption ="Sat"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =120
                     Top =1260
@@ -202,6 +228,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =600
                     Top =1260
@@ -212,6 +239,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1080
                     Top =1260
@@ -222,6 +250,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1560
                     Top =1260
@@ -232,6 +261,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2040
                     Top =1260
@@ -242,6 +272,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2520
                     Top =1260
@@ -252,6 +283,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =3000
                     Top =1260
@@ -262,6 +294,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =120
                     Top =1680
@@ -272,6 +305,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =600
                     Top =1680
@@ -282,6 +316,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1080
                     Top =1680
@@ -292,6 +327,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1560
                     Top =1680
@@ -302,6 +338,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2040
                     Top =1680
@@ -312,6 +349,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2520
                     Top =1680
@@ -322,6 +360,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =3000
                     Top =1680
@@ -332,6 +371,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =120
                     Top =2100
@@ -342,6 +382,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =600
                     Top =2100
@@ -352,6 +393,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1080
                     Top =2100
@@ -362,6 +404,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1560
                     Top =2100
@@ -372,6 +415,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2040
                     Top =2100
@@ -382,6 +426,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2520
                     Top =2100
@@ -392,6 +437,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =3000
                     Top =2100
@@ -402,6 +448,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =120
                     Top =2520
@@ -412,6 +459,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =600
                     Top =2520
@@ -422,6 +470,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1080
                     Top =2520
@@ -432,6 +481,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1560
                     Top =2520
@@ -442,6 +492,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2040
                     Top =2520
@@ -452,6 +503,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2520
                     Top =2520
@@ -462,6 +514,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =3000
                     Top =2520
@@ -472,6 +525,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =120
                     Top =2940
@@ -482,6 +536,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =600
                     Top =2940
@@ -492,6 +547,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1080
                     Top =2940
@@ -502,6 +558,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1560
                     Top =2940
@@ -512,6 +569,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2040
                     Top =2940
@@ -522,6 +580,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2520
                     Top =2940
@@ -532,6 +591,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =3000
                     Top =2940
@@ -542,6 +602,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =120
                     Top =3360
@@ -552,6 +613,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =600
                     Top =3360
@@ -562,6 +624,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1080
                     Top =3360
@@ -572,6 +635,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =1560
                     Top =3360
@@ -582,6 +646,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2040
                     Top =3360
@@ -592,6 +657,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =2520
                     Top =3360
@@ -602,6 +668,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     OverlapFlags =85
                     Left =3000
                     Top =3360
@@ -612,6 +679,7 @@ VersionRequired =19
                     Caption ="1"
                     OnClick ="[Event Procedure]"
                 End
+                Begin CommandButton
                     Cancel = NotDefault
                     OverlapFlags =85
                     Left =2700
