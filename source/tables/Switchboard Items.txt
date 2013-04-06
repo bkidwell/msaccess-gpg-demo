@@ -1,0 +1,5 @@
+﻿SwitchboardID	ItemNumber	ItemText	Command	Argument
+1	0	Main Switchboard		Default
+1	1	Browse / &Edit Addresses	3	Addresses
+1	2	&Upload Data to FTP Server	3	Upload
+1	3	&About	3	About
